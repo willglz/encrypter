@@ -1,11 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="media/icono.png" type="image/x-icon"/>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/logic.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200;400&display=swap" rel="stylesheet">
+    <title>Encriptador</title>
 </head>
 <body>
-    <p>jijijaja</p>
+    <header>
+        <img src="media/Logo.png" alt="logo de alura" class="logo">
+    </header>
+    <main>
+        <section>
+            <textarea class="text-area" id="mytext" cols="30" rows="10" placeholder="Ingrese el texto aquí"></textarea>
+            <div>
+                <h6 class="info">Solo letras minusculas y sin acento</h6>
+            </div>
+            <div class="botones">
+                <button class="btn-enc" onclick="msj();">Encriptar</button>
+                <button class="btn-denc" onclick="msj2();">Desencriptar</button>
+            </div>
+        </section>
+        <section>
+            <textarea cols="20" rows="10" class="msj" id="newtext" disabled></textarea>
+            <div>
+                <button class="copy" onclick="copy();">Copiar</button>
+            </div>
+        </section>
+    </main>
 </body>
 </html>
