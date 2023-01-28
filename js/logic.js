@@ -1,7 +1,10 @@
 function msj(){
     var text = document.getElementById("mytext").value;
+    var pattern = new RegExp('^[A-Z]+$', 'i');
     if(text == ""){
         alert("Debes ingresar un texto");
+    }else if(!pattern.test(text)){
+        alert("Solo se permiten letras y que no tengan acento");
     }else{
         document.getElementById("newtext").value = "";
         document.getElementById("newtext").style = "background-image: none";
